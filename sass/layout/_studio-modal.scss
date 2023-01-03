@@ -1,0 +1,221 @@
+// Modal
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+  overflow-y: scroll;
+  padding: 93px 15px;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 650px;
+  max-width: 450px;
+  background-color: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  @media screen and (min-width: 375px) and (max-width: 1199.5px) {
+    max-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-height: 581px;
+    max-width: 528px;
+  }
+}
+
+.modal__close-button {
+  display: flex;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.modal__button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $primary-bg-color;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button:hover .modal__icon-close,
+.modal__button:focus .modal__icon-close {
+  fill: $accent-bg-color;
+}
+
+.modal__header {
+  color: $title-text-color;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.modal__lable {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal__lable-text {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal__input {
+  display: flex;
+  position: relative;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  padding: 12px 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-color: $accent-bg-color;
+  }
+
+  .modal__lable--feedback > &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+}
+
+.modal__thumb {
+  display: flex;
+  position: relative;
+}
+
+.modal__icon {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__input:focus + & {
+    fill: $accent-bg-color;
+  }
+}
+
+.modal__lable--feedback {
+  height: 120px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.modal__input--feedback {
+  height: 120px;
+
+  .modal__lable--feedback > & {
+    resize: none;
+    padding: 12px 16px;
+  }
+}
+
+.modal__lable--checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 1.71;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.modal__agreement-text {
+  font-size: 12px;
+  line-height: 1.17;
+  margin-left: 8.38px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.modal__agreement-conditions {
+  color: $accent-color;
+}
+
+.modal__icon-checkbox {
+  width: 25px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  border-radius: 3px;
+
+  .modal__agreement-lable:checked + & {
+    border: none;
+    background-image: url(../images/icon-check.svg);
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 479.5px) {
+    width: 20px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 16px;
+  }
+}
+
+.modal__submit-btn {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  color: $secondary-text-color;
+  background-color: $accent-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  min-width: 200px;
+  padding: 10px 52px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-bg-hover-color;
+  }
+}

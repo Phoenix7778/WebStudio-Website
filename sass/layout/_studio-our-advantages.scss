@@ -1,0 +1,47 @@
+// Our advantages
+.advantages-list__heading {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.advantages-list__item {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.advantages-list__text {
+  line-height: 1.7;
+}
+
+.advantages-list__icons {
+  display: flex;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $secondary-bg-color;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}

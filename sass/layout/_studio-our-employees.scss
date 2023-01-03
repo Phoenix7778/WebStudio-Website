@@ -1,0 +1,114 @@
+// Our employees
+.section.employees {
+  background-color: $secondary-bg-color;
+}
+
+.employees__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.employees__title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+
+.employees__subtitle {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.employees__job-title {
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.employees__list {
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.employees__item {
+  max-width: 450px;
+  background: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767.5px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.employees__link {
+  display: flex;
+  color: #afb1b8;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    background-color: $accent-bg-hover-color;
+  }
+}
+
+.employees__link-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.employees__social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.employees__social-link {
+  height: 44px;
+  width: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
