@@ -1,6 +1,6 @@
 // Work samples
 .portfolio-list {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -11,7 +11,7 @@
   display: flex;
   max-width: 100%;
 
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -35,11 +35,11 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     width: 354px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 370px;
   }
 }
@@ -54,14 +54,14 @@
 .portfolio-list__project-name {
   color: $title-text-color;
   font-weight: 700;
-  font-size: 18px;
+  font-size: em(18);
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 
 .portfolio-list__project-type {
-  font-size: 16px;
+  font-size: em(16);
   line-height: 1.88;
 }
 
@@ -73,7 +73,7 @@
 .portfolio-list__text-above {
   display: flex;
   position: absolute;
-  font-size: 18px;
+  font-size: em(18);
   line-height: 1.56;
   justify-content: center;
   align-items: center;

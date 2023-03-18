@@ -1,19 +1,19 @@
 // Footer
 .footer {
-  background-color: #2f303a;
+  background-color: $footer-bg-color;
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .footer-tablet {
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: baseline;
   }
@@ -23,11 +23,11 @@
   display: block;
   text-align: center;
 
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     flex-direction: column;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: baseline;
     text-align: start;
@@ -35,15 +35,15 @@
 }
 
 .footer-address {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     margin-left: 76px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 0;
     margin-right: 70px;
   }
@@ -56,12 +56,12 @@
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: em(24);
   line-height: 1.38;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
+  @include desktop {
+    font-size: em(26);
     line-height: 1.19;
   }
 }
@@ -75,7 +75,7 @@
 .footer-address__item:not(:last-child) {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 9px;
   }
 }
@@ -104,11 +104,11 @@
 
 /* Social links */
 .footer-social-links {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     margin-right: 89px;
   }
 }
@@ -116,13 +116,13 @@
 .footer-social-links__title {
   color: $secondary-text-color;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: em(14);
   line-height: 1.17;
   margin-bottom: 20px;
   text-align: left;
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: start;
   }
 }
@@ -169,12 +169,12 @@
 
 // Subscribe
 .footer__subscribe {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-left: auto;
   }
 }
@@ -189,14 +189,14 @@
   text-align: left;
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     text-align: start;
   }
 }
 
 .footer-form {
   width: 100%;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     align-items: flex-end;
   }
@@ -206,7 +206,7 @@
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 12px;
   }
 }
@@ -225,23 +225,23 @@
   padding: 15px 16px;
 
   &::placeholder {
-    font-size: 16px;
+    font-size: em(16);
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (max-width: 1199.5px) {
+  @media screen and (max-width: $tablet-max) {
     display: block;
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
   }
 }
@@ -258,7 +258,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
+  font-size: em(16);
   line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;
@@ -273,7 +273,7 @@
     background-color: $accent-bg-hover-color;
   }
 
-  @media screen and (max-width: 1199.5px) {
+  @media screen and (max-width: $tablet-max) {
     margin-right: auto;
     margin-left: auto;
   }

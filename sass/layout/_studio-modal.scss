@@ -30,11 +30,11 @@
   border-radius: 4px;
   padding: 40px;
 
-  @media screen and (min-width: 375px) and (max-width: 1199.5px) {
+  @media screen and (min-width: 375px) and (max-width: $tablet-max) {
     max-height: 609px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-height: 581px;
     max-width: 528px;
   }
@@ -67,7 +67,7 @@
 
 .modal__header {
   color: $title-text-color;
-  font-size: 20px;
+  font-size: em(20);
   margin-bottom: 12px;
   font-weight: 700;
   line-height: 1.5;
@@ -85,7 +85,7 @@
 
 .modal__lable-text {
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: em(12);
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
@@ -109,7 +109,7 @@
 
   .modal__lable--feedback > &::placeholder {
     color: rgba(117, 117, 117, 0.5);
-    font-size: 12px;
+    font-size: em(12);
     line-height: 1.17;
     letter-spacing: 0.01em;
   }
@@ -159,12 +159,12 @@
 }
 
 .modal__agreement-text {
-  font-size: 12px;
+  font-size: em(12);
   line-height: 1.17;
   margin-left: 8.38px;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
+  @include desktop {
+    font-size: em(14);
     line-height: 1.7;
   }
 }
@@ -184,11 +184,7 @@
     background-image: url(../images/icon-check.svg);
   }
 
-  @media screen and (min-width: 375px) and (max-width: 479.5px) {
-    width: 20px;
-  }
-
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 375px) {
     width: 16px;
   }
 }
@@ -205,7 +201,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
+  font-size: em(16);
   line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;

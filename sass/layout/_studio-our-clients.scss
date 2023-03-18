@@ -25,11 +25,11 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 226px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 170px;
   }
 }
@@ -47,14 +47,14 @@
 .clients__title {
   color: $title-text-color;
   font-weight: 700;
-  font-size: 28px;
+  font-size: em(28);
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 36px;
+  @include desktop {
+    font-size: em(36);
     line-height: 1.17;
     margin-bottom: 50px;
   }

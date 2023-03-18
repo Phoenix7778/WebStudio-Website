@@ -1,9 +1,20 @@
-  $primary-text-color: #757575;
-  $secondary-text-color: #ffffff;
-  $title-text-color: #212121;
-  $primary-bg-color: #ffffff;
-  $secondary-bg-color: #f5f4fa;
-  $accent-color: #2196f3;
-  $accent-bg-color: #2196f3;
-  $accent-bg-hover-color: #188ce8;
+// Text colors
+$primary-text-color: #757575;
+$secondary-text-color: #ffffff;
+$title-text-color: #212121;
+$accent-color: #2196f3;
 
+//Background colors
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #f5f4fa;
+$footer-bg-color: #2f303a;
+$accent-bg-color: #2196f3;
+$accent-bg-hover-color: #188ce8;
+
+// Window sizes
+$before-mobile-min: 479.5px;
+$mobile-min: 480px;
+$mobile-max: 767.5px;
+$tablet-min: 768px;
+$tablet-max: 1279.5px;
+$desktop-min: 1280px;

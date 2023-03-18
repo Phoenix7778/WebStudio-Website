@@ -2,13 +2,13 @@
 .advantages-list__heading {
   color: $title-text-color;
   font-weight: 700;
-  font-size: 14px;
+  font-size: em(14);
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     text-align: start;
   }
 }
@@ -23,11 +23,11 @@
 .advantages-list__item {
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 354px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 270px;
   }
 }

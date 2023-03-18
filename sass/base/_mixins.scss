@@ -1,0 +1,43 @@
+// Font-size function (em)
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+// Window size mixins
+@mixin before-mobile-min {
+  @media screen and (max-width: $before-mobile-min) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (min-width: $mobile-min) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-min) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-min) {
+    @content;
+  }
+}

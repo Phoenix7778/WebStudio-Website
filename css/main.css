@@ -2,7 +2,7 @@ body {
   color: #757575;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   letter-spacing: 0.03em;
   padding-top: 60px;
 }
@@ -53,7 +53,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .container {
     max-width: 480px;
   }
@@ -63,9 +63,9 @@ textarea {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
+    width: 1280px;
   }
 }
 
@@ -91,7 +91,7 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -113,21 +113,21 @@ textarea {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 1.17;
   padding-top: 16px;
   padding-bottom: 16px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .site-nav__logo {
     margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .site-nav__logo {
-    font-size: 26px;
+    font-size: 1.625em;
     line-height: 1.2;
     margin-right: 93px;
     padding-top: 24px;
@@ -171,7 +171,7 @@ textarea {
   display: block;
   color: #212121;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875em;
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -179,12 +179,12 @@ textarea {
 }
 @media screen and (min-width: 425px) {
   .site-nav__link {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 768px) {
   .site-nav__link {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -243,14 +243,14 @@ textarea {
     gap: 32px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .contact-info {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info {
     display: flex;
   }
@@ -265,7 +265,7 @@ textarea {
   display: flex;
   color: #757575;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -273,18 +273,18 @@ textarea {
 }
 @media screen and (min-width: 425px) {
   .contact-info__link {
-    font-size: 34px;
+    font-size: 2.125em;
   }
 }
 @media screen and (min-width: 768px) {
   .contact-info__link {
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 1.17;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__link {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -316,12 +316,12 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .contact-info__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contact-info__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -340,7 +340,7 @@ textarea {
 
 .contact__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -348,7 +348,7 @@ textarea {
 }
 @media screen and (min-width: 425px) {
   .contact__link {
-    font-size: 18px;
+    font-size: 1.125em;
   }
 }
 
@@ -447,17 +447,17 @@ textarea {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-480-2x.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .greeting {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.5px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.5px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.5px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.5px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.5px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279.5px) and (min-resolution: 2dppx) {
   .greeting {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768-2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .greeting {
     height: 600px;
     display: flex;
@@ -465,7 +465,7 @@ textarea {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .greeting {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1600-2x.jpg);
   }
@@ -475,15 +475,15 @@ textarea {
   max-width: 360px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 1.625em;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .greeting__title {
-    font-size: 44px;
+    font-size: 2.75em;
     line-height: 1.36;
     max-width: 696px;
   }
@@ -498,7 +498,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;
@@ -509,7 +509,7 @@ textarea {
 .greeting__order-button:hover, .greeting__order-button:focus {
   background-color: #188ce8;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .greeting__order-button {
     min-width: 216px;
   }
@@ -544,12 +544,12 @@ textarea {
   border-radius: 4px;
   padding: 40px;
 }
-@media screen and (min-width: 375px) and (max-width: 1199.5px) {
+@media screen and (min-width: 375px) and (max-width: 1279.5px) {
   .modal {
     max-height: 609px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .modal {
     max-height: 581px;
     max-width: 528px;
@@ -583,7 +583,7 @@ textarea {
 
 .modal__header {
   color: #212121;
-  font-size: 20px;
+  font-size: 1.25em;
   margin-bottom: 12px;
   font-weight: 700;
   line-height: 1.5;
@@ -601,7 +601,7 @@ textarea {
 
 .modal__lable-text {
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
@@ -623,19 +623,13 @@ textarea {
 }
 .modal__lable--feedback > .modal__input::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-.modal__lable--feedback > .modal__input:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 .modal__lable--feedback > .modal__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
@@ -682,13 +676,13 @@ textarea {
 }
 
 .modal__agreement-text {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 1.17;
   margin-left: 8.38px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .modal__agreement-text {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 1.7;
   }
 }
@@ -707,12 +701,7 @@ textarea {
   border: none;
   background-image: url(../images/icon-check.svg);
 }
-@media screen and (min-width: 375px) and (max-width: 479.5px) {
-  .modal__icon-checkbox {
-    width: 20px;
-  }
-}
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
   .modal__icon-checkbox {
     width: 16px;
   }
@@ -729,7 +718,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;
@@ -744,7 +733,7 @@ textarea {
 .advantages-list__heading {
   color: #212121;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -771,7 +760,7 @@ textarea {
     width: 354px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .advantages-list__item {
     width: 270px;
   }
@@ -795,7 +784,7 @@ textarea {
   padding-top: 0;
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .section.no-padding {
     display: flex;
   }
@@ -804,7 +793,7 @@ textarea {
 .work-directions__title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25em;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
@@ -852,15 +841,15 @@ textarea {
 .employees__title {
   color: #212121;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75em;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .employees__title {
-    font-size: 36px;
+    font-size: 2.25em;
     line-height: 1.17;
     margin-bottom: 50px;
   }
@@ -869,14 +858,14 @@ textarea {
 .employees__subtitle {
   color: #212121;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .employees__job-title {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 16px;
@@ -978,7 +967,7 @@ textarea {
     width: 226px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .clients-list__url {
     width: 170px;
   }
@@ -995,15 +984,15 @@ textarea {
 .clients__title {
   color: #212121;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75em;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .clients__title {
-    font-size: 36px;
+    font-size: 2.25em;
     line-height: 1.17;
     margin-bottom: 50px;
   }
@@ -1013,18 +1002,17 @@ textarea {
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  justify-content: center;
   gap: 15px 8px;
-}
-@media screen and (min-width: 1200px) {
-  .buttons-list {
-    justify-content: center;
-    margin-bottom: 50px;
-  }
 }
 @media screen and (min-width: 768px) {
   .buttons-list {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .buttons-list {
+    margin-bottom: 50px;
   }
 }
 
@@ -1036,7 +1024,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.63;
   letter-spacing: 0.03em;
   text-align: center;
@@ -1093,12 +1081,12 @@ textarea {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .portfolio-list__work-sample {
     width: 354px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .portfolio-list__work-sample {
     width: 370px;
   }
@@ -1114,14 +1102,14 @@ textarea {
 .portfolio-list__project-name {
   color: #212121;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 
 .portfolio-list__project-type {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.88;
 }
 
@@ -1133,7 +1121,7 @@ textarea {
 .portfolio-list__text-above {
   display: flex;
   position: absolute;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1.56;
   justify-content: center;
   align-items: center;
@@ -1168,18 +1156,13 @@ textarea {
 .contacts__heading {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25em;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 767.5px) {
-  .contatcs-address__thumb {
-    text-align: -webkit-center;
-  }
-}
 @media screen and (min-width: 768px) {
   .contatcs-address__thumb {
     display: flex;
@@ -1211,11 +1194,12 @@ textarea {
 }
 
 .contacts-timetable {
+  display: flex;
   color: #212121;
 }
 @media screen and (max-width: 767.5px) {
   .contacts-timetable {
-    margin-top: 8px;
+    margin-top: 15px;
     margin-bottom: 50px;
   }
 }
@@ -1233,7 +1217,7 @@ textarea {
     height: 400px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts-map {
     width: 1000px;
     height: 500px;
@@ -1246,7 +1230,7 @@ textarea {
   padding-top: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .footer-tablet {
     display: flex;
     align-items: baseline;
@@ -1254,7 +1238,7 @@ textarea {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-tablet {
     display: flex;
     align-items: baseline;
@@ -1270,7 +1254,7 @@ textarea {
     flex-direction: column;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-content {
     display: flex;
     align-items: baseline;
@@ -1283,12 +1267,12 @@ textarea {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .footer-address {
     margin-left: 76px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-address {
     margin-bottom: 0;
     margin-right: 70px;
@@ -1301,13 +1285,13 @@ textarea {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 1.38;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-address__logo {
-    font-size: 26px;
+    font-size: 1.625em;
     line-height: 1.19;
   }
 }
@@ -1320,7 +1304,7 @@ textarea {
 .footer-address__item:not(:last-child) {
   margin-bottom: 8px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-address__item:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -1350,7 +1334,7 @@ textarea {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .footer-social-links {
     margin-right: 89px;
   }
@@ -1359,13 +1343,13 @@ textarea {
 .footer-social-links__title {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.17;
   margin-bottom: 20px;
   text-align: left;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-social-links__title {
     text-align: start;
   }
@@ -1413,7 +1397,7 @@ textarea {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer__subscribe {
     margin-left: auto;
   }
@@ -1429,7 +1413,7 @@ textarea {
   text-align: left;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer__form-header {
     text-align: start;
   }
@@ -1438,7 +1422,7 @@ textarea {
 .footer-form {
   width: 100%;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-form {
     display: flex;
     align-items: flex-end;
@@ -1449,7 +1433,7 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-form__label {
     margin-right: 12px;
   }
@@ -1469,34 +1453,29 @@ textarea {
   padding: 15px 16px;
 }
 .footer-form__input::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-form__input:-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-form__input::placeholder {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 1199.5px) {
+@media screen and (max-width: 1279.5px) {
   .footer-form__input {
     display: block;
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+@media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .footer-form__input {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer-form__input {
     width: 358px;
   }
@@ -1513,7 +1492,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.88;
   letter-spacing: 0.06em;
   font-family: inherit;
@@ -1525,7 +1504,7 @@ textarea {
 .footer-form__btn:hover, .footer-form__btn:focus {
   background-color: #188ce8;
 }
-@media screen and (max-width: 1199.5px) {
+@media screen and (max-width: 1279.5px) {
   .footer-form__btn {
     margin-right: auto;
     margin-left: auto;

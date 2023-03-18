@@ -1,7 +1,7 @@
 .contacts__heading {
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: em(36);
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
@@ -9,11 +9,7 @@
 }
 
 .contatcs-address__thumb {
-  @media screen and (max-width: 767.5px) {
-    text-align: -webkit-center;
-  }
-
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
@@ -23,7 +19,7 @@
 .contacts-address__item:not(:last-child) {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 5px;
   }
 }
@@ -44,10 +40,11 @@
 }
 
 .contacts-timetable {
+  display: flex;
   color: $title-text-color;
 
-  @media screen and (max-width: 767.5px) {
-    margin-top: 8px;
+  @media screen and (max-width: $mobile-max) {
+    margin-top: 15px;
     margin-bottom: 50px;
   }
 }
@@ -59,12 +56,12 @@
   width: 300px;
   height: 300px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 700px;
     height: 400px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1000px;
     height: 500px;
   }

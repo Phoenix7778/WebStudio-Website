@@ -16,20 +16,20 @@
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: em(24);
   line-height: 1.17;
 
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     margin-right: 88px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
+  @include desktop {
+    font-size: em(26);
     line-height: 1.2;
     margin-right: 93px;
     padding-top: 24px;
@@ -40,7 +40,7 @@
 .header-links {
   display: flex;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 100%;
   }
 }
@@ -54,7 +54,7 @@
 .site-nav {
   margin-bottom: 64px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     align-items: center;
     margin-bottom: 0;
@@ -62,7 +62,7 @@
 }
 
 .site-nav__list {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     margin-bottom: 0;
   }
@@ -73,7 +73,7 @@
   color: $title-text-color;
 
   font-weight: 500;
-  font-size: 30px;
+  font-size: em(30);
   line-height: 1.18;
   letter-spacing: 0.02em;
 
@@ -82,11 +82,11 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 425px) {
-    font-size: 40px;
+    font-size: em(40);
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
+  @include tablet {
+    font-size: em(14);
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -98,7 +98,7 @@
     text-decoration: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     &--current::after {
       content: '';
       position: absolute;
@@ -118,22 +118,22 @@
 }
 
 .site-nav__item:not(:last-child) {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     margin-bottom: 32px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 50px;
   }
 }
 
 // Header contact info
 .header__contact {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     margin-top: auto;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -141,20 +141,20 @@
 }
 
 .contact-info {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: $mobile-max) {
     margin-bottom: 64px;
     display: flex;
     flex-direction: column-reverse;
     gap: 32px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
   }
 }
@@ -169,7 +169,7 @@
   color: $primary-text-color;
 
   font-weight: 500;
-  font-size: 20px;
+  font-size: em(20);
   line-height: 1.18;
   letter-spacing: 0.02em;
 
@@ -178,16 +178,16 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 425px) {
-    font-size: 34px;
+    font-size: em(34);
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
+  @include tablet {
+    font-size: em(12);
     line-height: 1.17;
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
+  @include desktop {
+    font-size: em(14);
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -207,7 +207,7 @@
     margin-right: 10px;
     fill: currentColor;
 
-    @media screen and (max-width: 767.5px) {
+    @media screen and (max-width: $mobile-max) {
       display: none;
     }
   }
@@ -217,17 +217,17 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     justify-content: center;
   }
 }
 
 .contact-info__item:not(:last-child) {
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  @include tablet-only {
     margin-bottom: 10px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 30px;
   }
 }
@@ -237,21 +237,21 @@
   flex-wrap: wrap;
   gap: 10px;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
 
 .contact__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: em(14);
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
 
   @media screen and (min-width: 425px) {
-    font-size: 18px;
+    font-size: em(18);
   }
 }
 
