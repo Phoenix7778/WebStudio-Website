@@ -97,27 +97,57 @@
           <h1 class="visually-hidden">Зразки робіт</h1>
 
           <!--Filter buttons-->
-          <ul class="buttons-list">
+          <ul class="buttons-list" id="myBtnContainer">
             <li class="button-list__item">
-              <button type="button" class="button-list__filter-button accent">Усі</button>
+              <button
+                type="button"
+                class="button-list__filter-button active"
+                onclick="filterSelection('all')"
+              >
+                Усі
+              </button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__filter-button">Веб-сайти</button>
+              <button
+                type="button"
+                class="button-list__filter-button"
+                onclick="filterSelection('web-sites')"
+              >
+                Веб-сайти
+              </button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__filter-button">Додатки</button>
+              <button
+                type="button"
+                class="button-list__filter-button"
+                onclick="filterSelection('applications')"
+              >
+                Додатки
+              </button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__filter-button">Дизайн</button>
+              <button
+                type="button"
+                class="button-list__filter-button"
+                onclick="filterSelection('design')"
+              >
+                Дизайн
+              </button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__filter-button">Маркетинг</button>
+              <button
+                type="button"
+                class="button-list__filter-button"
+                onclick="filterSelection('marketing')"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <!--Work samples-->
           <ul class="portfolio-list">
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item web-sites">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -150,7 +180,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item design design">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -198,7 +228,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item applications">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -246,7 +276,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item marketing">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -279,7 +309,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item applications">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -312,7 +342,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item web-sites">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -345,7 +375,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item design">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -380,7 +410,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item marketing">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -413,7 +443,7 @@
               </a>
             </li>
 
-            <li class="portfolio-list__item">
+            <li class="portfolio-list__item applications">
               <a href="#" class="portfolio-list__work-sample">
                 <div class="portfolio-list__thumb">
                   <picture>
@@ -568,6 +598,6 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/filter-btn.js"></script>
   </body>
 </html>

@@ -8,14 +8,18 @@
 }
 
 .portfolio-list__item {
-  display: flex;
   max-width: 100%;
+  display: none;
 
   @media screen and (max-width: $mobile-max) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
+}
+
+.show {
+  display: flex;
 }
 
 .portfolio-list__work-sample {
