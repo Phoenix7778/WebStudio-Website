@@ -12,7 +12,7 @@ body {
   }
 }
 
-body.modal-open {
+body.modal-open, body.menu-open {
   overflow: hidden;
 }
 

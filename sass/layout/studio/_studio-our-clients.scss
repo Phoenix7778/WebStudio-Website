@@ -1,17 +1,10 @@
-// Our clients
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
+// // Our clients
 .clients-list__url {
-  color: #afb1b8;
+  color: $link-text-color;
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid $link-text-color;
   border-radius: 4px;
   justify-content: center;
   align-items: center;

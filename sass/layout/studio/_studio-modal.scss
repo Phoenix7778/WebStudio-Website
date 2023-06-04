@@ -7,7 +7,7 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
   overflow-y: scroll;
   padding: 93px 15px;
@@ -15,7 +15,12 @@
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
   }
+}
+
+body.modal-open {
+      overflow-y: hidden;
 }
 
 .modal {
@@ -30,6 +35,9 @@
   border-radius: 4px;
   padding: 40px;
 
+  transform: translate scaleY(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 375px) and (max-width: $tablet-max) {
     max-height: 609px;
   }
@@ -38,6 +46,10 @@
     max-height: 581px;
     max-width: 528px;
   }
+}
+
+.backdrop.is-hidden .modal {
+  transform: scaleY(0);
 }
 
 .modal__close-button {
@@ -73,7 +85,7 @@
   line-height: 1.5;
 }
 
-.modal__lable {
+.modal__label {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -83,7 +95,7 @@
   margin-left: auto;
 }
 
-.modal__lable-text {
+.modal__label-text {
   margin-bottom: 4px;
   font-size: em(12);
   line-height: 1.17;
@@ -107,7 +119,7 @@
     border-color: $accent-bg-color;
   }
 
-  .modal__lable--feedback > &::placeholder {
+  .modal__label--feedback > &::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-size: em(12);
     line-height: 1.17;
@@ -134,7 +146,7 @@
   }
 }
 
-.modal__lable--feedback {
+.modal__label--feedback {
   height: 120px;
   margin-bottom: 20px;
   height: auto;
@@ -143,13 +155,13 @@
 .modal__input--feedback {
   height: 120px;
 
-  .modal__lable--feedback > & {
+  .modal__label--feedback > & {
     resize: none;
     padding: 12px 16px;
   }
 }
 
-.modal__lable--checkbox {
+.modal__label--checkbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -179,7 +191,7 @@
   border: 2px solid #2a2a2a;
   border-radius: 3px;
 
-  .modal__agreement-lable:checked + & {
+  .modal__agreement-label:checked + & {
     border: none;
     background-image: url(../images/icon-check.svg);
   }
