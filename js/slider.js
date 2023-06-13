@@ -20,6 +20,10 @@ var swiper = new Swiper('.swiper-container', {
     768: {
       slidesPerView: 3,
       centeredSlides: false,
+      autoplay: {
+        delay: 0,
+  },
+speed: 500,
     },
     // When screen width is more than 1280px
     1280: {
