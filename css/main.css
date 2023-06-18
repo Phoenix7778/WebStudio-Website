@@ -225,7 +225,7 @@ textarea {
 @media screen and (max-width: 767.5px) {
   .header__contact {
     margin-top: auto;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
 }
 @media screen and (min-width: 768px) {
