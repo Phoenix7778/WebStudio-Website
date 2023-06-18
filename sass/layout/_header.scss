@@ -131,6 +131,7 @@
 .header__contact {
   @media screen and (max-width: $mobile-max) {
     margin-top: auto;
+    margin-bottom: 30px;
   }
 
   @include tablet {
@@ -166,6 +167,7 @@
 
 .contact-info__link {
   display: flex;
+  align-items: center;
   color: $primary-text-color;
 
   font-weight: 500;
@@ -184,6 +186,7 @@
   @include tablet {
     font-size: em(12);
     line-height: 1.17;
+    align-items: center;
   }
 
   @include desktop {
@@ -199,7 +202,6 @@
 .contact-info__icon {
   display: flex;
 
-  align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &-mail,

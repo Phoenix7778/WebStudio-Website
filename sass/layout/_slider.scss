@@ -9,6 +9,7 @@
 
 .swiper-wrapper {
   display: flex;
+  transition-timing-function: linear;
 }
 
 .swiper-slide {

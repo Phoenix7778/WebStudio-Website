@@ -6,7 +6,7 @@ var swiper = new Swiper('.swiper-container', {
   watchOverflow: true,
   centeredSlides: true,
   autoplay: {
-    delay: 2000, // Change the delay (in milliseconds) as per your preference
+    delay: 1500, // Change the delay (in milliseconds) as per your preference
     disableOnInteraction: false, // Autoplay continues even when user interacts with swiper
   },
   speed: 1000,
@@ -22,8 +22,8 @@ var swiper = new Swiper('.swiper-container', {
       centeredSlides: false,
       autoplay: {
         delay: 0,
-  },
-speed: 500,
+      },
+      speed: 3000,
     },
     // When screen width is more than 1280px
     1280: {
