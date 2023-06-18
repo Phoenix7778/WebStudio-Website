@@ -1035,6 +1035,10 @@ body.modal-open {
   }
 }
 
+.employees__photo {
+  width: 100%;
+}
+
 .employees__link {
   display: flex;
   color: #afb1b8;
