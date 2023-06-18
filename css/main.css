@@ -364,39 +364,6 @@ textarea {
   border: none;
 }
 
-.menu-toggle {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-.menu-toggle:focus, .menu-toggle:hover {
-  fill: #2196f3;
-}
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-
-.menu-toggle__close {
-  display: none;
-}
-
-.menu-toggle.is-open .menu-toggle__close {
-  display: block;
-}
-
-.menu-toggle.is-open .menu-toggle__open {
-  display: none;
-}
-
 .header-links {
   display: flex;
   width: 100%;
@@ -431,6 +398,134 @@ textarea {
   transform: translateX(0);
 }
 
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle span {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  transform: translateY(0px);
+  display: block;
+  border-radius: 9px;
+  animation: opacityOn 0.5s linear both;
+}
+.menu-toggle span::before, .menu-toggle span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  border-radius: 9px;
+}
+.menu-toggle span::before {
+  margin-top: 15px;
+  transform: translateY(-24px);
+  animation: downAndTurnReverse 0.5s linear both;
+}
+.menu-toggle span::after {
+  margin-top: -15px;
+  transform: translateY(24px);
+  animation: upAndTurnReverse 0.5s linear both;
+}
+
+.menu-toggle.active span {
+  animation: opacityOff 0.5s linear both;
+}
+.menu-toggle.active span::before {
+  margin-top: 0;
+  animation: downAndTurn 0.5s linear both;
+  background-color: #000;
+}
+.menu-toggle.active span::after {
+  margin-top: 0;
+  animation: upAndTurn 0.5s linear both;
+  background-color: #000;
+}
+
+@keyframes downAndTurn {
+  0% {
+    transform: translateY(-24px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(45deg);
+  }
+}
+@keyframes downAndTurnReverse {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-24px) rotate(0deg);
+  }
+}
+@keyframes upAndTurn {
+  0% {
+    transform: translateY(24px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-45deg);
+  }
+}
+@keyframes upAndTurnReverse {
+  0% {
+    transform: translateY(0px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(24px) rotate(0deg);
+  }
+}
+@keyframes opacityOff {
+  0% {
+    background-color: #000;
+  }
+  49% {
+    background-color: #000;
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes opacityOn {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  49% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #000;
+  }
+}
 .swiper-container {
   width: 100%;
   overflow: hidden;
